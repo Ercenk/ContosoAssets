@@ -1,0 +1,12 @@
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\obj\Debug\netstandard2.0\ContosoAssets.SolutionManagement.csprojAssemblyReference.cache
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\obj\Debug\netstandard2.0\ContosoAssets.SolutionManagement.csproj.CoreCompileInputs.cache
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\obj\Debug\netstandard2.0\ContosoAssets.SolutionManagement.AssemblyInfoInputs.cache
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\obj\Debug\netstandard2.0\ContosoAssets.SolutionManagement.AssemblyInfo.cs
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\bin\Debug\netstandard2.0\ContosoAssets.SolutionManagement.deps.json
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\bin\Debug\netstandard2.0\ContosoAssets.SolutionManagement.dll
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\obj\Debug\netstandard2.0\ContosoAssets.SolutionManagement.csproj.CopyComplete
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\bin\Debug\netstandard2.0\ContosoAssets.SolutionManagement.pdb
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\obj\Debug\netstandard2.0\ContosoAssets.SolutionManagement.dll
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\obj\Debug\netstandard2.0\ContosoAssets.SolutionManagement.pdb
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\bin\Debug\netstandard2.0\ContosoAssets.Utils.dll
+D:\Projects\ContosoAssets\src\ContosoAssets.SolutionManagement\bin\Debug\netstandard2.0\ContosoAssets.Utils.pdb

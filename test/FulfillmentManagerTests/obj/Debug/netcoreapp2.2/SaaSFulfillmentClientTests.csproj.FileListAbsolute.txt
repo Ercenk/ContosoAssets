@@ -1,0 +1,17 @@
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\bin\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.deps.json
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\bin\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.runtimeconfig.json
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\bin\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.runtimeconfig.dev.json
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\bin\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.dll
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\bin\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.pdb
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\bin\Debug\netcoreapp2.2\SaaSFulfillmentClient.dll
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\bin\Debug\netcoreapp2.2\SaaSFulfillmentClient.pdb
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\obj\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.csprojAssemblyReference.cache
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\obj\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.csproj.CoreCompileInputs.cache
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\obj\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.AssemblyInfoInputs.cache
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\obj\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.AssemblyInfo.cs
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\obj\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.csproj.CopyComplete
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\obj\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.dll
+D:\Projects\ContosoAssets\test\SaaSFulfillmentClientTests\obj\Debug\netcoreapp2.2\SaaSFulfillmentClientTests.pdb

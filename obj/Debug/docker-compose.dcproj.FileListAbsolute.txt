@@ -1,0 +1,15 @@
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.WebApp.Views.dll
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.WebApp.Views.pdb
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.AMPIntegration.Views.dll
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.AMPIntegration.Views.pdb
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.AMPIntegration.dll
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.WebApp.dll
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.SolutionManagement.dll
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.Utils.dll
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.WebApp.pdb
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.AMPIntegration.pdb
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.SolutionManagement.pdb
+D:\Projects\ContosoAssets\bin\Debug\ContosoAssets.Utils.pdb
+D:\Projects\ContosoAssets\obj\Debug\docker-compose.dcprojAssemblyReference.cache
+D:\Projects\ContosoAssets\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+D:\Projects\ContosoAssets\obj\Debug\docker-compose.dcproj.CopyComplete

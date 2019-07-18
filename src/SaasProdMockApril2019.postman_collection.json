@@ -1,0 +1,372 @@
+{
+    "info": {
+        "_postman_id": "415b68f0-8836-4c77-9f14-55ddec613363",
+        "name": "SAAS PROD MOCK",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Resolve",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "type": "text",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-ms-marketplace-token",
+                        "value": "ddd",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"planId\": \"Gold\"\n}"
+                },
+                "url": {
+                    "raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions/resolve?api-version=2018-09-15",
+                    "protocol": "https",
+                    "host": [
+                        "marketplaceapi",
+                        "microsoft",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "saas",
+                        "subscriptions",
+                        "resolve"
+                    ],
+                    "query": [
+                        {
+                            "key": "api-version",
+                            "value": "2018-09-15"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Activate subscription",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "type": "text",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"planId\": \"Gold\"\n}"
+                },
+                "url": {
+                    "raw":
+                        "https://marketplaceapi.microsoft.com/api/saas/subscriptions/37f9dea2-4345-438f-b0bd-03d40d28c7e0/activate?api-version=2018-09-15",
+                    "protocol": "https",
+                    "host": [
+                        "marketplaceapi",
+                        "microsoft",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "saas",
+                        "subscriptions",
+                        "37f9dea2-4345-438f-b0bd-03d40d28c7e0",
+                        "activate"
+                    ],
+                    "query": [
+                        {
+                            "key": "api-version",
+                            "value": "2018-09-15"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get all subscriptions",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "https://marketplaceapi.microsoft.com/api/saas/subscriptions?api-version=2018-09-15",
+                    "protocol": "https",
+                    "host": [
+                        "marketplaceapi",
+                        "microsoft",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "saas",
+                        "subscriptions"
+                    ],
+                    "query": [
+                        {
+                            "key": "api-version",
+                            "value": "2018-09-15"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get subscription by Id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw":
+                        "https://marketplaceapi.microsoft.com/api/saas/subscriptions/0aa95e32-8be7-4e5e-94f9-563f6d7d9dcd?api-version=2018-09-15",
+                    "protocol": "https",
+                    "host": [
+                        "marketplaceapi",
+                        "microsoft",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "saas",
+                        "subscriptions",
+                        "0aa95e32-8be7-4e5e-94f9-563f6d7d9dcd"
+                    ],
+                    "query": [
+                        {
+                            "key": "api-version",
+                            "value": "2018-09-15"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "List available plans",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw":
+                        "https://marketplaceapi.microsoft.com/api/saas/subscriptions/37f9dea2-4345-438f-b0bd-03d40d28c7e0/listAvailablePlans?api-version=2018-09-15",
+                    "protocol": "https",
+                    "host": [
+                        "marketplaceapi",
+                        "microsoft",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "saas",
+                        "subscriptions",
+                        "37f9dea2-4345-438f-b0bd-03d40d28c7e0",
+                        "listAvailablePlans"
+                    ],
+                    "query": [
+                        {
+                            "key": "api-version",
+                            "value": "2018-09-15"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update subscription plan",
+            "request": {
+                "method": "PATCH",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "type": "text",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"planId\": \"Premium\"\n}"
+                },
+                "url": {
+                    "raw":
+                        "https://marketplaceapi.microsoft.com/api/saas/subscriptions/0aa95e32-8be7-4e5e-94f9-563f6d7d9dcd?api-version=2018-09-15",
+                    "protocol": "https",
+                    "host": [
+                        "marketplaceapi",
+                        "microsoft",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "saas",
+                        "subscriptions",
+                        "0aa95e32-8be7-4e5e-94f9-563f6d7d9dcd"
+                    ],
+                    "query": [
+                        {
+                            "key": "api-version",
+                            "value": "2018-09-15"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Delete subscription",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw":
+                        "https://marketplaceapi.microsoft.com/api/saas/subscriptions/37f9dea2-4345-438f-b0bd-03d40d28c7e0?api-version=2018-09-15",
+                    "protocol": "https",
+                    "host": [
+                        "marketplaceapi",
+                        "microsoft",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "saas",
+                        "subscriptions",
+                        "37f9dea2-4345-438f-b0bd-03d40d28c7e0"
+                    ],
+                    "query": [
+                        {
+                            "key": "api-version",
+                            "value": "2018-09-15"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get all operations",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "https://marketplaceapi.microsoft.com/api/saas/operations?api-version=2018-09-15",
+                    "protocol": "https",
+                    "host": [
+                        "marketplaceapi",
+                        "microsoft",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "saas",
+                        "operations"
+                    ],
+                    "query": [
+                        {
+                            "key": "api-version",
+                            "value": "2018-09-15"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get all operations for a specific subscription",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw":
+                        "https://marketplaceapi.microsoft.com/api/saas/subscriptions/0aa95e32-8be7-4e5e-94f9-563f6d7d9dcd/operations?api-version=2018-09-15",
+                    "protocol": "https",
+                    "host": [
+                        "marketplaceapi",
+                        "microsoft",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "saas",
+                        "subscriptions",
+                        "0aa95e32-8be7-4e5e-94f9-563f6d7d9dcd",
+                        "operations"
+                    ],
+                    "query": [
+                        {
+                            "key": "api-version",
+                            "value": "2018-09-15"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get specific operation for a specific subscription by id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw":
+                        "https://marketplaceapi.microsoft.com/api/saas/subscriptions/0aa95e32-8be7-4e5e-94f9-563f6d7d9dcd/operations/ea0b5d24-112b-4fc0-a6fc-44f3b8119458?api-version=2018-09-15",
+                    "protocol": "https",
+                    "host": [
+                        "marketplaceapi",
+                        "microsoft",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "saas",
+                        "subscriptions",
+                        "0aa95e32-8be7-4e5e-94f9-563f6d7d9dcd",
+                        "operations",
+                        "ea0b5d24-112b-4fc0-a6fc-44f3b8119458"
+                    ],
+                    "query": [
+                        {
+                            "key": "api-version",
+                            "value": "2018-09-15"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}

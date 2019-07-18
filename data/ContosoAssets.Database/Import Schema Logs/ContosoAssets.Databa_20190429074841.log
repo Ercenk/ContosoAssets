@@ -1,0 +1,82 @@
+4/29/2019 12:48:41 PM	This log contains information about the import schema operation into project 'ContosoAssets.Database' on computer 'ERCENK' by user 'ercenk'.
+4/29/2019 12:48:42 PM	Import of database schema has started.
+4/29/2019 12:48:47 PM	Gathering logins
+4/29/2019 12:50:31 PM	Gathering database credentials
+4/29/2019 12:50:31 PM	Gathering database options
+4/29/2019 12:50:31 PM	Gathering generic database scoped configuration option
+4/29/2019 12:50:31 PM	Gathering users
+4/29/2019 12:50:31 PM	Gathering roles
+4/29/2019 12:50:31 PM	Gathering application roles
+4/29/2019 12:50:31 PM	Gathering role memberships
+4/29/2019 12:50:31 PM	Gathering filegroups
+4/29/2019 12:50:31 PM	Gathering full-text catalogs
+4/29/2019 12:50:31 PM	Gathering assemblies
+4/29/2019 12:50:31 PM	Gathering certificates
+4/29/2019 12:50:31 PM	Gathering symmetric keys
+4/29/2019 12:50:31 PM	Gathering encrypted symmetric keys
+4/29/2019 12:50:31 PM	Gathering schemas
+4/29/2019 12:50:31 PM	Gathering XML schema collections
+4/29/2019 12:50:31 PM	Gathering user-defined data types
+4/29/2019 12:50:31 PM	Gathering user-defined types
+4/29/2019 12:50:31 PM	Gathering table types
+4/29/2019 12:50:31 PM	Gathering unique keys for table types
+4/29/2019 12:50:31 PM	Gathering primary keys for table types
+4/29/2019 12:50:31 PM	Gathering indexes for table types
+4/29/2019 12:50:32 PM	Gathering check constraints for table types
+4/29/2019 12:50:32 PM	Gathering default constraints for table types
+4/29/2019 12:50:32 PM	Gathering partition functions
+4/29/2019 12:50:32 PM	Gathering partition schemes
+4/29/2019 12:50:32 PM	Gathering functions
+4/29/2019 12:50:32 PM	Gathering encrypted functions
+4/29/2019 12:50:32 PM	Gathering aggregates
+4/29/2019 12:50:32 PM	Gathering procedures
+4/29/2019 12:50:32 PM	Gathering encrypted procedures
+4/29/2019 12:50:32 PM	Gathering tables
+4/29/2019 12:50:32 PM	Gathering primary keys
+4/29/2019 12:50:33 PM	Gathering unique constraints
+4/29/2019 12:50:33 PM	Gathering foreign keys
+4/29/2019 12:50:33 PM	Gathering default constraints
+4/29/2019 12:50:33 PM	Gathering check constraints
+4/29/2019 12:50:33 PM	Gathering views
+4/29/2019 12:50:33 PM	Gathering encrypted views
+4/29/2019 12:50:33 PM	Gathering indexes
+4/29/2019 12:50:33 PM	Gathering statistics
+4/29/2019 12:50:33 PM	Gathering full-text index stoplists
+4/29/2019 12:50:33 PM	Gathering search property lists
+4/29/2019 12:50:33 PM	Gathering search properties
+4/29/2019 12:50:33 PM	Gathering full-text indexes
+4/29/2019 12:50:33 PM	Gathering column store indexes
+4/29/2019 12:50:33 PM	Gathering spatial indexes
+4/29/2019 12:50:33 PM	Gathering XML indexes
+4/29/2019 12:50:33 PM	Gathering Selective XML indexes
+4/29/2019 12:50:33 PM	Gathering encrypted triggers
+4/29/2019 12:50:33 PM	Gathering triggers
+4/29/2019 12:50:33 PM	Gathering encrypted and clr ddl triggers
+4/29/2019 12:50:33 PM	Gathering ddl triggers
+4/29/2019 12:50:33 PM	Gathering synonyms
+4/29/2019 12:50:33 PM	Gathering defaults
+4/29/2019 12:50:33 PM	Gathering data constraint uddt bindings
+4/29/2019 12:50:33 PM	Gathering rules
+4/29/2019 12:50:33 PM	Gathering data constraint uddt bindings
+4/29/2019 12:50:33 PM	Gathering message types
+4/29/2019 12:50:33 PM	Gathering queues
+4/29/2019 12:50:33 PM	Gathering contracts
+4/29/2019 12:50:33 PM	Gathering services
+4/29/2019 12:50:33 PM	Gathering event notifications
+4/29/2019 12:50:33 PM	Gathering remote service bindings
+4/29/2019 12:50:33 PM	Gathering broker priorities
+4/29/2019 12:50:33 PM	Gathering signatures
+4/29/2019 12:50:33 PM	Gathering data compression options
+4/29/2019 12:50:33 PM	Gathering sequence types
+4/29/2019 12:50:33 PM	Gathering security policies
+4/29/2019 12:50:33 PM	Gather column encryption keys
+4/29/2019 12:50:33 PM	Gathering column master keys
+4/29/2019 12:50:33 PM	Gathering external data sources
+4/29/2019 12:50:34 PM	Gathering external tables
+4/29/2019 12:50:34 PM	Gathering extended properties
+4/29/2019 12:50:34 PM	Gathering logins
+4/29/2019 12:50:35 PM	Scanning project for duplicate elements
+4/29/2019 12:50:36 PM	Finished duplicate element processing
+4/29/2019 12:50:37 PM	Finished importing database.
+4/29/2019 12:50:37 PM	A summary of the import was saved to the following location: D:\Projects\ContosoAssets\data\ContosoAssets.Database\Import Schema Logs\ContosoAssets.Databa_20190429074841.log
+4/29/2019 12:50:37 PM	Click Finish to continue...

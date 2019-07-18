@@ -1,0 +1,75 @@
+@using Microsoft.AspNetCore.Identity
+@model IEnumerable<ContosoAssets.SolutionManagement.Data.CustomerUserWithUsage>
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-area="SubscriptionManagement" asp-controller="Users" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MtdUsage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalUsage)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        @if (User.Identity.Name != item.UserName)
+         {
+             <tr>
+                 <td>
+                     @Html.DisplayFor(modelItem => item.UserName)
+                 </td>
+                 <td>
+                     @Html.DisplayFor(modelItem => item.FullName)
+                 </td>
+                 <td>
+                     @Html.DisplayFor(modelItem => item.CustomerName)
+                 </td>
+                 <td>
+                     @Html.DisplayFor(modelItem => item.CreatedDate)
+                 </td>
+                 <th>
+                     @Html.DisplayFor(modelItem => item.MtdUsage)
+                 </th>
+                 <th>
+                     @Html.DisplayFor(modelItem => item.TotalUsage)
+                 </th>
+                 <td>
+
+                     <div>
+                         @*Commenting out the edit since in this sample there is nothing to edit.*@
+                         @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
+                         <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                         <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                     </div>
+                 </td>
+             </tr>
+         }
+    }
+    </tbody>
+</table>

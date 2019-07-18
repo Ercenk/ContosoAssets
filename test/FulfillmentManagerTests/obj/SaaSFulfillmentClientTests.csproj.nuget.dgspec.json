@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\ContosoAssets\\test\\SaaSFulfillmentClientTests\\SaaSFulfillmentClientTests.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\ContosoAssets\\src\\SaaSFulfillmentClient\\SaaSFulfillmentClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\ContosoAssets\\src\\SaaSFulfillmentClient\\SaaSFulfillmentClient.csproj",
+        "projectName": "AzureMarketplaceSaaSApiClient",
+        "projectPath": "D:\\Projects\\ContosoAssets\\src\\SaaSFulfillmentClient\\SaaSFulfillmentClient.csproj",
+        "packagesPath": "C:\\Users\\ercenk\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\ContosoAssets\\src\\SaaSFulfillmentClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ercenk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Projects\\ContosoAssets\\test\\SaaSFulfillmentClientTests\\SaaSFulfillmentClientTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\ContosoAssets\\test\\SaaSFulfillmentClientTests\\SaaSFulfillmentClientTests.csproj",
+        "projectName": "SaaSFulfillmentClientTests",
+        "projectPath": "D:\\Projects\\ContosoAssets\\test\\SaaSFulfillmentClientTests\\SaaSFulfillmentClientTests.csproj",
+        "packagesPath": "C:\\Users\\ercenk\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\ContosoAssets\\test\\SaaSFulfillmentClientTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ercenk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Projects\\ContosoAssets\\src\\SaaSFulfillmentClient\\SaaSFulfillmentClient.csproj": {
+                "projectPath": "D:\\Projects\\ContosoAssets\\src\\SaaSFulfillmentClient\\SaaSFulfillmentClient.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.10.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

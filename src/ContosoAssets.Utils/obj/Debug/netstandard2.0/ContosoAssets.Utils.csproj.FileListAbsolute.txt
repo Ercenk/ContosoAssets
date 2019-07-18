@@ -1,0 +1,9 @@
+D:\Projects\ContosoAssets\src\ContosoAssets.Utils\obj\Debug\netstandard2.0\ContosoAssets.Utils.csprojAssemblyReference.cache
+D:\Projects\ContosoAssets\src\ContosoAssets.Utils\obj\Debug\netstandard2.0\ContosoAssets.Utils.csproj.CoreCompileInputs.cache
+D:\Projects\ContosoAssets\src\ContosoAssets.Utils\obj\Debug\netstandard2.0\ContosoAssets.Utils.AssemblyInfoInputs.cache
+D:\Projects\ContosoAssets\src\ContosoAssets.Utils\obj\Debug\netstandard2.0\ContosoAssets.Utils.AssemblyInfo.cs
+D:\Projects\ContosoAssets\src\ContosoAssets.Utils\bin\Debug\netstandard2.0\ContosoAssets.Utils.deps.json
+D:\Projects\ContosoAssets\src\ContosoAssets.Utils\bin\Debug\netstandard2.0\ContosoAssets.Utils.dll
+D:\Projects\ContosoAssets\src\ContosoAssets.Utils\bin\Debug\netstandard2.0\ContosoAssets.Utils.pdb
+D:\Projects\ContosoAssets\src\ContosoAssets.Utils\obj\Debug\netstandard2.0\ContosoAssets.Utils.dll
+D:\Projects\ContosoAssets\src\ContosoAssets.Utils\obj\Debug\netstandard2.0\ContosoAssets.Utils.pdb

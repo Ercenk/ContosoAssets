@@ -1,0 +1,127 @@
+﻿@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<IdentityUser> SignInManager
+@inject ISubscriptionManager subscriptionManager
+@using ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
+@using ContosoAssets.SolutionManagement.Data
+@using ContosoAssets.SolutionManagement.SubscriptionManagement
+@using Microsoft.AspNetCore.Identity
+@model ContosoAssets.WebApp.Areas.SubscriptionManagement.Models.SubscriptionModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <h4>Subscription management - @Model.CurrentSku.SalesChannel</h4>
+        <hr/>
+    </div>
+    <div class="row">
+        @if (Model.Subscription.State != SubscriptionState.Complete)
+        {
+            <div class="alert alert-danger" role="alert">
+                Subscription is not active.
+            </div>
+        }
+    </div>
+    <div class="row">
+
+        <div class="col-sm-4">
+            <dl class="row">
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.CurrentSku.Name)
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.CurrentSku.Name)
+                </dd>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Subscription.CreatedTime)
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.Subscription.CreatedTime)
+                </dd>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Subscription.LastOperationTime)
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.Subscription.LastOperationTime)
+                </dd>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Subscription.State)
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.Subscription.State)
+                </dd>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.MonthToDateUsage)
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.MonthToDateUsage)
+                </dd>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.TotalUsage)
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.TotalUsage)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-sm-8">
+            @if (Model.Subscription.State == SubscriptionState.Complete)
+            {
+                <form asp-controller="Subscription" asp-action="CancelSubscription" method="post">
+                    <div class="form-group">
+                        <input type="submit" value="Cancel subscription" class="btn btn-primary"/>
+                    </div>
+                </form>
+            }
+            else if (Model.CurrentSku.SalesChannel != SalesChannelEnum.Azure)
+            {
+                <form asp-controller="Subscription" asp-action="ReActivateSubsription" method="post">
+                    <div class="form-group">
+                        <input type="submit" value="Reactivate subscription" class="btn btn-primary"/>
+                    </div>
+                </form>
+            }
+        </div>
+    </div>
+
+    <br/>
+
+    @if (Model.Subscription.State == SubscriptionState.Complete)
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <form asp-controller="Subscription" asp-action="Edit" method="post">
+                        <div class="row">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label class="control-label font-weight-bold">Update subscription</label>
+                            </div>
+
+                            <div class="col-sm-2">
+                                <select asp-for="CurrentSku.Id" asp-items="@(new SelectList(Model.AvailableSkus, "Id", "Name"))" class="form-control">
+                                    <option selected="selected" value="">Please select</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="submit" value="Update" class="btn btn-primary"/>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <span asp-validation-for="CurrentSku" class="text-danger"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

@@ -1,0 +1,125 @@
+﻿@page
+@using ContosoAssets.SolutionManagement.Data
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div class="user">
+                <h4>Create a new account</h4>
+            </div>
+            <div class="admin">
+                <h4>Create a new account and provision your client</h4>
+            </div>
+            <hr/>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-8">
+                        <label asp-for="Input.IsAdmin"></label>
+                    </div>
+                    <div class="col-md-4">
+                        <input asp-for="Input.IsAdmin" class="form-control" id="isAdmin" onclick="ShowHide()"/>
+                    </div>
+                    <span asp-validation-for="Input.IsAdmin" class="text-danger"></span>
+                </div>
+            </div>
+
+            <!-- Admin section -->
+            <div class="admin">
+                <div class="form-group">
+                    <label asp-for="Input.ActivationCode"></label>
+                    <input asp-for="Input.ActivationCode" class="form-control"/>
+                </div>
+            </div>
+            <div class="admin">
+                <div class="form-group">
+                    <label asp-for="Input.CustomerRegion"></label>
+                    <select asp-for="Input.CustomerRegion" asp-items="Html.GetEnumSelectList<CustomerRegionEnum>()" class="form-control">
+                        <option selected="selected" value="">Please select</option>
+                    </select>
+                </div>
+            </div>
+            <div class="admin">
+                <div class="form-group">
+                    <label asp-for="Input.PlanId"></label>
+                    <select asp-for="Input.PlanId" asp-items="@(new SelectList(Model.Skus, "Id", "Name"))" class="form-control">
+                        <option selected="selected" value="">Please select</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Admin section end-->
+
+            <div class="form-group">
+                <label asp-for="Input.FullName"></label>
+                <input asp-for="Input.FullName" class="form-control"/>
+                <span asp-validation-for="Input.FullName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Input.Email"></label>
+                <input asp-for="Input.Email" class="form-control"/>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Password"></label>
+                <input asp-for="Input.Password" class="form-control"/>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.ConfirmPassword"></label>
+                <input asp-for="Input.ConfirmPassword" class="form-control"/>
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <p> We tried to cover two scenarios here for procurement.</p>
+        <ul>
+            <li>
+                <p>
+                    After an out of band buying experience, the administrator
+                    provides payment information and receives an activation code. By providing the
+                    activation code, the administrator starts billing upon registration. We assume
+                    the administrator had already selected a plan and cannot change it (not implemented
+                    in the sample, the administrator can still select a different plan).
+                </p>
+            </li>
+            <li>
+                <p>
+                    In application buying experience (not fully
+                    implemented), the administrator selects the plan level as well as deployment
+                    region and provides payment information (not implemented).
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        We are assuming after registration, a provisioning component can kick in and may provision required resources for the customer's plan level and selected geography.
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+    <script type="text/javascript">
+
+        function ShowHide() {
+            $(document).ready(function() {
+                if ($("#isAdmin").prop("checked")) {
+                    $(".admin").show();
+                    $(".user").hide();
+                } else {
+                    $(".admin").hide();
+                }
+            });
+        };
+
+        ShowHide();
+    </script>
+}

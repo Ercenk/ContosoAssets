@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Contoso Asset Management</h1>
+
+        This is a very simple solution for asset management. It is multi-tenant and allows multiple customers' users to manage the status of their assets. It is intended to be a starting point for demostrating the integration with Azure Marketplace.
+    </div>
+</section>
+
+<div class="container">
+    <h1>Scenarios</h1>
+</div>
+
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-3">
+            <h2>Customer administrator registration</h2>
+            <p>
+                A customer administrator can register herself/himself, by
+                providing an activation code, and needs to provide a SKU level, as well as a
+                deployment region.
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Customer user management</h2>
+
+            <p>
+                Upon registering, the administrator can login to list, add
+                and remove customer users.
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Customer user registration</h2>
+
+            <p>
+                Once the administrator adds a user to the customers
+                account, the user needs to self-register to provide other details (Full name as
+                an example).
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Asset management</h2>
+
+            <p>
+                After a user registers and logs in, she/he can list/add/remove/update
+                assets. List, add and update operations are metered,
+                and checked against the customer's plan limits.
+            </p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  contosoassets.webapp:
+    image: ${DOCKER_REGISTRY-}contosoassetswebapp
+    build:
+      context: .
+      dockerfile: src/ContosoAssets.WebApp/Dockerfile
+    environment:
+      ConnectionStrings__ContosoAssets: "Server=sqldatabase;Initial Catalog=assets;User=sa;Password=V3ryS3cr3tP@ssw0rd;"
+    depends_on:
+      - sqldatabase
+  contosoassets.ampintegration:
+    image: ${DOCKER_REGISTRY-}contosoassetsampintegration
+    build:
+      context: .
+      dockerfile: src/ContosoAssets.AMPIntegration/Dockerfile
+    depends_on:
+      - sqldatabase
+  sqldatabase:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: "V3ryS3cr3tP@ssw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"

@@ -1,0 +1,106 @@
+﻿@using ContosoAssets.SolutionManagement.Data
+@model ContosoAssets.AMPIntegration.Models.AzureSubscriptionProvisionModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h4>Sign up for the solution</h4>
+
+<br/>
+
+<div class="jumbotron-fluid">
+    <p>An example provisioining experience on the landing page required for the Azure Marketplace integration. Here, we assume the solution does a special provisioning based on the admin's region preference.</p>
+    <p>We also show an example of using a custom authentication example, by grabbing the admin user's email address (since only administrators can land here) and create a new user account for the admin internally.</p>
+    <p>We make a distinction between the identity provider and solution user in the solution. This example does following:</p>
+    <ul>
+        <li>Use Azure AD to authenticate the administrator user</li>
+        <li>Asks him/her to create a new user on the internal authentication system, by using the administrator's email, and a new password.</li>
+        <li>Also provisions the users as an administrator for the solution.</li>
+        <li>Mimicks a custom provisioning procedure, performing custom operations per region.</li>
+    </ul>
+</div>
+
+<hr/>
+<div class="row">
+    <div class="col-md-12">
+
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group row">
+                <label asp-for="FullName" class="control-label col-sm-6"></label>
+                <div class="col-sm-6">
+                    <input asp-for="FullName" type="hidden" class="form-control"/>
+                    @Html.DisplayFor(model => model.FullName)
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Email" class="control-label col-sm-6"></label>
+                <div class="col-sm-6">
+                    <input asp-for="Email" type="hidden" class="form-control"/>
+                    @Html.DisplayFor(model => model.Email)
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label asp-for="Password" class="control-label col-sm-6"></label>
+                <div class="col-sm-6">
+                    <input asp-for="Password" class="form-control"/>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="ConfirmPassword" class="control-label col-sm-6"></label>
+                <div class="col-sm-6">
+                    <input asp-for="ConfirmPassword" class="form-control"/>
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="CustomerRegion" class="control-label col-sm-6"></label>
+                <div class="col-sm-6">
+                    <select asp-for="CustomerRegion" asp-items="Html.GetEnumSelectList<CustomerRegionEnum>()" class="form-control">
+                        <option selected="selected" value="">Please select</option>
+                    </select>
+                    <span asp-validation-for="CustomerRegion" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label asp-for="OfferId" class="control-label col-sm-6"></label>
+                <div class="col-sm-6">
+                    <input asp-for="OfferId" type="hidden" class="form-control"/>
+                    @Html.DisplayFor(model => model.OfferId)
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label asp-for="PlanName" class="control-label col-sm-6"></label>
+                <div class="col-sm-6">
+                    <input asp-for="PlanName" type="hidden" class="form-control"/>
+                    @Html.DisplayFor(model => model.PlanName)
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label asp-for="SubscriptionName" class="control-label col-sm-6"></label>
+                <div class="col-sm-6">
+                    <input asp-for="SubscriptionName" type="hidden" class="form-control"/>
+                    @Html.DisplayFor(model => model.SubscriptionName)
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <input asp-for="PlanId" type="hidden" class="form-control"/>
+            </div>
+
+            <div class="form-group row">
+                <input asp-for="SubscriptionId" type="hidden" class="form-control"/>
+            </div>
+
+            <div class="form-group row">
+                <input type="submit" value="Create" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
