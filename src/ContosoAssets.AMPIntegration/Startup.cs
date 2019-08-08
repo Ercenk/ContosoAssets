@@ -84,7 +84,6 @@ namespace ContosoAssets.AMPIntegration
                 .AddWebhookProcessor()
                 .WithWebhookHandler<ContosoWebhookHandler>();
 
-            //services.TryAddScoped<IUserManagerAdapter, AspNetDefaultIdentityUsers>();
             services.AddSolutionManagement(this.Configuration.GetContosoAssetsDefaultConnectionString());
 
             // Adding these just to access the stores

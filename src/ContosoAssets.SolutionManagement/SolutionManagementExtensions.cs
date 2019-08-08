@@ -1,4 +1,5 @@
-﻿using ContosoAssets.SolutionManagement.CustomerManagement;
+﻿using ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment;
+using ContosoAssets.SolutionManagement.CustomerManagement;
 using ContosoAssets.SolutionManagement.Data;
 using ContosoAssets.SolutionManagement.Provisioning;
 using ContosoAssets.SolutionManagement.SubscriptionManagement;
@@ -16,6 +17,7 @@ namespace ContosoAssets.SolutionManagement
                 options.UseSqlServer(connectionString)
             );
 
+            services.TryAddScoped<IFulfillmentManager, FulfillmentManager>();
             services.TryAddScoped<ISubscriptionManager, SubscriptionManager>();
             services.TryAddScoped<IProvisioningManager, ProvisioningManager>();
             services.TryAddScoped<ICustomerManager, CustomerManager>();

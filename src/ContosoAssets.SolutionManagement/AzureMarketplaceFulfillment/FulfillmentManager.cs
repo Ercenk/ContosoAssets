@@ -29,8 +29,6 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
         public async Task<MarketplaceSubscription> ActivateSubscriptionAsync(Guid subscriptionId, string planId,
             int? quantity, CancellationToken cancellationToken = default)
         {
-            var bearerToken = await AdApplicationHelper.GetBearerToken(this.AdApplication);
-
             var requestId = Guid.NewGuid();
             var correlationId = Guid.NewGuid();
             var subscriptionToBeActivated = new ActivatedSubscription { PlanId = planId };
@@ -76,7 +74,6 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
         {
             var requestId = Guid.NewGuid();
             var correlationId = Guid.NewGuid();
-            var bearerToken = await AdApplicationHelper.GetBearerToken(this.AdApplication);
 
             var operationResult = await this.fulfillmentClient.GetSubscriptionOperationAsync(
                 receivedSubscriptionId,
@@ -120,7 +117,6 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
         {
             var requestId = Guid.NewGuid();
             var correlationId = Guid.NewGuid();
-            var bearerToken = await AdApplicationHelper.GetBearerToken(this.AdApplication);
 
             var deleteRequest = await this.fulfillmentClient.DeleteSubscriptionAsync(subscriptionId, requestId,
                 correlationId, cancellationToken);
@@ -149,7 +145,6 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
         {
             var requestId = Guid.NewGuid();
             var correlationId = Guid.NewGuid();
-            var bearerToken = await AdApplicationHelper.GetBearerToken(this.AdApplication);
 
             var activatedSubscription = new ActivatedSubscription { PlanId = name };
 
@@ -181,8 +176,6 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
         public async Task<MarketplaceSubscription> ResolveSubscriptionAsync(string authCode,
             CancellationToken cancellationToken = default)
         {
-            var bearerToken = await AdApplicationHelper.GetBearerToken(this.AdApplication);
-
             var requestId = Guid.NewGuid();
             var correlationId = Guid.NewGuid();
             var subscription = await this.fulfillmentClient.ResolveSubscriptionAsync(authCode, requestId, correlationId,
