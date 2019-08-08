@@ -43,7 +43,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
-              "version": "[2.2.4, )"
+              "version": "[2.2.6, )"
             },
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",

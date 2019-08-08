@@ -13,8 +13,6 @@ D:\Projects\ContosoAssets\test\FulfillmentManagerTests\obj\Debug\netcoreapp2.2\F
 D:\Projects\ContosoAssets\test\FulfillmentManagerTests\obj\Debug\netcoreapp2.2\FulfillmentSdkTests.csproj.CopyComplete
 D:\Projects\ContosoAssets\test\FulfillmentManagerTests\obj\Debug\netcoreapp2.2\FulfillmentSdkTests.dll
 D:\Projects\ContosoAssets\test\FulfillmentManagerTests\obj\Debug\netcoreapp2.2\FulfillmentSdkTests.pdb
-D:\Projects\ContosoAssets\test\FulfillmentManagerTests\bin\Debug\netcoreapp2.2\SaaSFulfillmentClient.dll
-D:\Projects\ContosoAssets\test\FulfillmentManagerTests\bin\Debug\netcoreapp2.2\SaaSFulfillmentClient.pdb
 D:\Projects\ContosoAssets\test\FulfillmentManagerTests\bin\Debug\netcoreapp2.2\ContosoAssets.SolutionManagement.dll
 D:\Projects\ContosoAssets\test\FulfillmentManagerTests\bin\Debug\netcoreapp2.2\ContosoAssets.Utils.dll
 D:\Projects\ContosoAssets\test\FulfillmentManagerTests\bin\Debug\netcoreapp2.2\ContosoAssets.SolutionManagement.pdb

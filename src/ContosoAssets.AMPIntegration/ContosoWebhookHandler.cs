@@ -3,6 +3,7 @@ using ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment;
 using ContosoAssets.SolutionManagement.SubscriptionManagement;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using SaaSFulfillmentClient.WebHook;
 
 namespace ContosoAssets.AMPIntegration
 {

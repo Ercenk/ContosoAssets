@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SaaSFulfillmentClient;
 
 namespace ContosoAssets.AMPIntegration
 {
@@ -76,7 +77,7 @@ namespace ContosoAssets.AMPIntegration
                 options.TokenValidationParameters.ValidateIssuer = false; // accept several tenants (here simplified)
             });
 
-            services.AddFulfillmentManager(options => ConfigurationBinder.Bind(this.Configuration, (string)"FulfillmentClient", (object)options),
+            services.AddFulfillmentClient(options => ConfigurationBinder.Bind(this.Configuration, (string)"FulfillmentClient", (object)options),
                 credentialBuilder => credentialBuilder.WithClientSecretAuthentication(this.Configuration["FulfillmentClient:AzureActiveDirectory:AppKey"]));
 
             services

@@ -47,7 +47,7 @@
           "dependencies": {
             "AzureMarketplaceSaaSApiClient": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[2.0.1, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -55,11 +55,11 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[2.2.4, )"
+              "version": "[2.2.6, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[2.2.4, )"
+              "version": "[2.2.6, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
@@ -73,9 +73,13 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.Identity.Client": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[4.3.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -131,7 +135,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
-              "version": "[2.2.4, )"
+              "version": "[2.2.6, )"
             },
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
@@ -219,11 +223,11 @@
             },
             "Microsoft.Identity.Client": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[4.3.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.1.1, )"
+              "version": "[16.2.0, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -233,7 +237,7 @@
             },
             "Moq": {
               "target": "Package",
-              "version": "[4.11.0, )"
+              "version": "[4.12.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

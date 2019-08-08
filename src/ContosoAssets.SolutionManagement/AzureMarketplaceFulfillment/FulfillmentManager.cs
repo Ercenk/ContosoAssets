@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Identity.Client;
 using SaaSFulfillmentClient;
+using SaaSFulfillmentClient.AzureAD;
 using SaaSFulfillmentClient.Models;
 
 namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
@@ -14,36 +15,13 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
     {
         private readonly IFulfillmentClient fulfillmentClient;
         private readonly ILogger<FulfillmentManager> logger;
-        private readonly ICredentialProvider credentialProvider;
-
-        private readonly FulfillmentManagerOptions options;
 
         public FulfillmentManager(
-            IOptionsMonitor<FulfillmentManagerOptions> optionsAccessor,
-            ICredentialProvider credentialProvider,
             IFulfillmentClient fulfillmentClient,
-            ILogger<FulfillmentManager> logger) : this(
-            optionsAccessor,
-            credentialProvider,
-            fulfillmentClient,
-            AdApplicationHelper.GetApplication,
-            logger)
-        {
-        }
-
-        public FulfillmentManager(
-            IOptionsMonitor<FulfillmentManagerOptions> optionsAccessor,
-            ICredentialProvider credentialProvider,
-            IFulfillmentClient fulfillmentClient,
-            Func<FulfillmentManagerOptions, ICredentialProvider, IConfidentialClientApplication> adApplicationFactory,
             ILogger<FulfillmentManager> logger)
         {
-            this.options = optionsAccessor.CurrentValue;
-
-            this.credentialProvider = credentialProvider;
             this.fulfillmentClient = fulfillmentClient;
             this.logger = logger;
-            this.AdApplication = adApplicationFactory(this.options, this.credentialProvider);
         }
 
         public IConfidentialClientApplication AdApplication { get; }
@@ -55,7 +33,7 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
 
             var requestId = Guid.NewGuid();
             var correlationId = Guid.NewGuid();
-            var subscriptionToBeActivated = new ActivatedSubscription {PlanId = planId};
+            var subscriptionToBeActivated = new ActivatedSubscription { PlanId = planId };
             if (quantity.HasValue)
             {
                 subscriptionToBeActivated.Quantity = quantity.Value.ToString();
@@ -66,7 +44,6 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
                 subscriptionToBeActivated,
                 requestId,
                 correlationId,
-                bearerToken,
                 cancellationToken);
 
             if (result.Success)
@@ -75,7 +52,9 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
                     $"Activated subscription {subscriptionId} for plan {planId} with quantitiy {quantity}");
                 var returnValue = new MarketplaceSubscription
                 {
-                    PlanId = planId, State = SubscriptionState.Complete, SubscriptionId = subscriptionId
+                    PlanId = planId,
+                    State = SubscriptionState.Complete,
+                    SubscriptionId = subscriptionId
                 };
 
                 if (quantity.HasValue)
@@ -104,7 +83,6 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
                 operationId,
                 requestId,
                 correlationId,
-                bearerToken,
                 cancellationToken);
 
             if (!operationResult.Success)
@@ -145,11 +123,11 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
             var bearerToken = await AdApplicationHelper.GetBearerToken(this.AdApplication);
 
             var deleteRequest = await this.fulfillmentClient.DeleteSubscriptionAsync(subscriptionId, requestId,
-                correlationId, bearerToken, cancellationToken);
+                correlationId, cancellationToken);
 
             if (!deleteRequest.Success)
             {
-                return FulfillmentManagerOperationResult.Failed(new FulfillmentManagementError {Description = ""});
+                return FulfillmentManagerOperationResult.Failed(new FulfillmentManagementError { Description = "" });
             }
 
             var operationUri = deleteRequest.Operation;
@@ -173,10 +151,10 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
             var correlationId = Guid.NewGuid();
             var bearerToken = await AdApplicationHelper.GetBearerToken(this.AdApplication);
 
-            var activatedSubscription = new ActivatedSubscription {PlanId = name};
+            var activatedSubscription = new ActivatedSubscription { PlanId = name };
 
             var updateResponse = await this.fulfillmentClient.UpdateSubscriptionAsync(subscriptionId,
-                activatedSubscription, requestId, correlationId, bearerToken, cancellationToken);
+                activatedSubscription, requestId, correlationId, cancellationToken);
 
             if (!updateResponse.Success)
             {
@@ -208,7 +186,7 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
             var requestId = Guid.NewGuid();
             var correlationId = Guid.NewGuid();
             var subscription = await this.fulfillmentClient.ResolveSubscriptionAsync(authCode, requestId, correlationId,
-                bearerToken, cancellationToken);
+                cancellationToken);
 
             if (subscription.Success)
             {

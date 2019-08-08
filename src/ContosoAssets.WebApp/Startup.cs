@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using SaaSFulfillmentClient;
 
 namespace ContosoAssets.WebApp
 {
@@ -89,7 +90,7 @@ namespace ContosoAssets.WebApp
                 options.UseSqlServer(this.Configuration.GetContosoAssetsDefaultConnectionString())
             );
 
-            services.AddFulfillmentManager(options => this.Configuration.Bind("FulfillmentClient", options),
+            services.AddFulfillmentClient(options => this.Configuration.Bind("FulfillmentClient", options),
                 credentialBuilder =>
                     credentialBuilder.WithClientSecretAuthentication(this.Configuration["FulfillmentClient:AzureActiveDirectory:AppKey"]));
 
