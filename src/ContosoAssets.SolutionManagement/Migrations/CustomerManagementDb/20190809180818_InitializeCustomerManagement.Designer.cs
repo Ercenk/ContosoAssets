@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContosoAssets.SolutionManagement.Migrations.CustomerManagementDb
 {
     [DbContext(typeof(CustomerManagementDbContext))]
-    [Migration("20190808230337_InitializeCustomerManagement")]
+    [Migration("20190809180818_InitializeCustomerManagement")]
     partial class InitializeCustomerManagement
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -101,7 +101,7 @@ namespace ContosoAssets.SolutionManagement.Migrations.CustomerManagementDb
                     b.HasData(
                         new
                         {
-                            Id = new Guid("885e900e-1a22-49ac-b526-e4154a8a5bbf"),
+                            Id = new Guid("097af8ee-f0a3-4d94-9a2b-56286f40ae26"),
                             Description = "None",
                             MonthlyCost = 0.0,
                             MonthlyLimit = 2147483647,
@@ -110,7 +110,7 @@ namespace ContosoAssets.SolutionManagement.Migrations.CustomerManagementDb
                         },
                         new
                         {
-                            Id = new Guid("b74519a4-368f-4d93-bd8f-143584da399e"),
+                            Id = new Guid("74b32656-6cea-4643-a62c-df18e18df51f"),
                             Description = "Silver",
                             MonthlyCost = 9.9900000000000002,
                             MonthlyLimit = 2,
@@ -119,7 +119,7 @@ namespace ContosoAssets.SolutionManagement.Migrations.CustomerManagementDb
                         },
                         new
                         {
-                            Id = new Guid("b0f164a7-a4ad-44b9-9062-7ea51a8a002a"),
+                            Id = new Guid("1f1e7f72-c872-48c1-8fe1-10c2002c24a9"),
                             Description = "Gold",
                             MonthlyCost = 19.989999999999998,
                             MonthlyLimit = 5,
@@ -128,7 +128,7 @@ namespace ContosoAssets.SolutionManagement.Migrations.CustomerManagementDb
                         },
                         new
                         {
-                            Id = new Guid("758759d4-8f48-42cd-9309-c4b0005061b2"),
+                            Id = new Guid("2b014a1b-367b-4c35-b3b9-49b9f64af818"),
                             Description = "Platinum",
                             MonthlyCost = 29.989999999999998,
                             MonthlyLimit = 7,
@@ -137,7 +137,7 @@ namespace ContosoAssets.SolutionManagement.Migrations.CustomerManagementDb
                         },
                         new
                         {
-                            Id = new Guid("ccbb97b7-835d-4532-b4d2-03b7bfca8ce3"),
+                            Id = new Guid("f67febe9-547d-4c51-b82e-53bac023b938"),
                             Description = "Silver",
                             MonthlyCost = 9.9900000000000002,
                             MonthlyLimit = 2,
@@ -146,7 +146,7 @@ namespace ContosoAssets.SolutionManagement.Migrations.CustomerManagementDb
                         },
                         new
                         {
-                            Id = new Guid("84e2bd3c-5405-4568-acad-28a84ff98db1"),
+                            Id = new Guid("f9b76781-a083-45c3-91c5-95074b7c944a"),
                             Description = "Gold",
                             MonthlyCost = 19.989999999999998,
                             MonthlyLimit = 5,
@@ -155,7 +155,7 @@ namespace ContosoAssets.SolutionManagement.Migrations.CustomerManagementDb
                         },
                         new
                         {
-                            Id = new Guid("21084065-506d-43df-8553-595513c2883b"),
+                            Id = new Guid("0f9f58e5-43ed-4400-a967-17dfccceef8c"),
                             Description = "Platinum",
                             MonthlyCost = 29.989999999999998,
                             MonthlyLimit = 7,

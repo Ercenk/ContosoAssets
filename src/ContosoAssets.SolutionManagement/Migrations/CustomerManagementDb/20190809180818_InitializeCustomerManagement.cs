@@ -117,13 +117,13 @@ namespace ContosoAssets.SolutionManagement.Migrations.CustomerManagementDb
                 columns: new[] { "Id", "Description", "MonthlyCost", "MonthlyLimit", "Name", "SalesChannel" },
                 values: new object[,]
                 {
-                    { new Guid("885e900e-1a22-49ac-b526-e4154a8a5bbf"), "None", 0.0, 2147483647, "None", 2 },
-                    { new Guid("b74519a4-368f-4d93-bd8f-143584da399e"), "Silver", 9.9900000000000002, 2, "Silver", 0 },
-                    { new Guid("b0f164a7-a4ad-44b9-9062-7ea51a8a002a"), "Gold", 19.989999999999998, 5, "Gold", 0 },
-                    { new Guid("758759d4-8f48-42cd-9309-c4b0005061b2"), "Platinum", 29.989999999999998, 7, "Platinum", 0 },
-                    { new Guid("ccbb97b7-835d-4532-b4d2-03b7bfca8ce3"), "Silver", 9.9900000000000002, 2, "Silver", 1 },
-                    { new Guid("84e2bd3c-5405-4568-acad-28a84ff98db1"), "Gold", 19.989999999999998, 5, "Gold", 1 },
-                    { new Guid("21084065-506d-43df-8553-595513c2883b"), "Platinum", 29.989999999999998, 7, "Platinum", 1 }
+                    { new Guid("097af8ee-f0a3-4d94-9a2b-56286f40ae26"), "None", 0.0, 2147483647, "None", 2 },
+                    { new Guid("74b32656-6cea-4643-a62c-df18e18df51f"), "Silver", 9.9900000000000002, 2, "Silver", 0 },
+                    { new Guid("1f1e7f72-c872-48c1-8fe1-10c2002c24a9"), "Gold", 19.989999999999998, 5, "Gold", 0 },
+                    { new Guid("2b014a1b-367b-4c35-b3b9-49b9f64af818"), "Platinum", 29.989999999999998, 7, "Platinum", 0 },
+                    { new Guid("f67febe9-547d-4c51-b82e-53bac023b938"), "Silver", 9.9900000000000002, 2, "Silver", 1 },
+                    { new Guid("f9b76781-a083-45c3-91c5-95074b7c944a"), "Gold", 19.989999999999998, 5, "Gold", 1 },
+                    { new Guid("0f9f58e5-43ed-4400-a967-17dfccceef8c"), "Platinum", 29.989999999999998, 7, "Platinum", 1 }
                 });
 
             migrationBuilder.CreateIndex(

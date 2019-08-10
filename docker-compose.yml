@@ -6,8 +6,6 @@ services:
     build:
       context: .
       dockerfile: src/ContosoAssets.WebApp/Dockerfile
-    environment:
-      ConnectionStrings__ContosoAssets: "Server=sqldatabase;Initial Catalog=assets;User=sa;Password=V3ryS3cr3tP@ssw0rd;"
     depends_on:
       - sqldatabase
   contosoassets.ampintegration:

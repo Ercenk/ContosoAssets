@@ -111,6 +111,8 @@ namespace ContosoAssets.AMPIntegration.Controllers
         // GET: LandingPage
         public async Task<ActionResult> Index(string token)
         {
+            this.logger.LogError($"Token {token}");
+
             var resolvedSubscription = await this.fulfillmentManager.ResolveSubscriptionAsync(token);
             if (resolvedSubscription == default(MarketplaceSubscription))
             {

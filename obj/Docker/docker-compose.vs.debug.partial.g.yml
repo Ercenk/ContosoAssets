@@ -12,7 +12,7 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
     volumes:
-      - D:\Projects\ContosoAssets\src\ContosoAssets.AMPIntegration:/app
+      - E:\Projects\ContosoAssets\src\ContosoAssets.AMPIntegration:/app
       - C:\Users\ercenk\vsdbg\vs2017u5:/remote_debugger:ro
       - C:\Users\ercenk\.nuget\packages\:/root/.nuget/packages:ro
       - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
@@ -37,7 +37,7 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
     volumes:
-      - D:\Projects\ContosoAssets\src\ContosoAssets.WebApp:/app
+      - E:\Projects\ContosoAssets\src\ContosoAssets.WebApp:/app
       - C:\Users\ercenk\vsdbg\vs2017u5:/remote_debugger:ro
       - C:\Users\ercenk\.nuget\packages\:/root/.nuget/packages:ro
       - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro

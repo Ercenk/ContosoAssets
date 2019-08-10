@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj": {}
+    "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj": {
+    "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj",
+        "projectUniqueName": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj",
         "projectName": "ContosoAssets.SolutionManagement",
-        "projectPath": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj",
+        "projectPath": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj",
         "packagesPath": "C:\\Users\\ercenk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\obj\\",
+        "outputPath": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj": {
-                "projectPath": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj"
+              "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj": {
+                "projectPath": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj"
               }
             }
           }
@@ -96,14 +96,14 @@
         }
       }
     },
-    "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj": {
+    "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj",
+        "projectUniqueName": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj",
         "projectName": "ContosoAssets.Utils",
-        "projectPath": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj",
+        "projectPath": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj",
         "packagesPath": "C:\\Users\\ercenk\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\obj\\",
+        "outputPath": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

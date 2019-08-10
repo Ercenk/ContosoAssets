@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContosoAssets.WebApp.Migrations
 {
     [DbContext(typeof(AssetManagementDbContext))]
-    [Migration("20190808230253_InitializeAssetManagement")]
+    [Migration("20190809180719_InitializeAssetManagement")]
     partial class InitializeAssetManagement
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
