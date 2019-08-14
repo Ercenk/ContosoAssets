@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\ContosoAssets\\test\\FulfillmentManagerTests\\FulfillmentSdkTests.csproj": {}
+    "D:\\Projects\\ContosoAssets\\test\\FulfillmentManagerTests\\FulfillmentSdkTests.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj": {
+    "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj",
+        "projectUniqueName": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj",
         "projectName": "ContosoAssets.SolutionManagement",
-        "projectPath": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj",
+        "projectPath": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj",
         "packagesPath": "C:\\Users\\ercenk\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\obj\\",
+        "outputPath": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj": {
-                "projectPath": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj"
+              "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj": {
+                "projectPath": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj"
               }
             }
           }
@@ -47,7 +47,7 @@
           "dependencies": {
             "AzureMarketplaceSaaSApiClient": {
               "target": "Package",
-              "version": "[2.0.1, )"
+              "version": "[2.0.5, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -96,14 +96,14 @@
         }
       }
     },
-    "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj": {
+    "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj",
+        "projectUniqueName": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj",
         "projectName": "ContosoAssets.Utils",
-        "projectPath": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj",
+        "projectPath": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\ContosoAssets.Utils.csproj",
         "packagesPath": "C:\\Users\\ercenk\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\obj\\",
+        "outputPath": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -156,14 +156,14 @@
         }
       }
     },
-    "E:\\Projects\\ContosoAssets\\test\\FulfillmentManagerTests\\FulfillmentSdkTests.csproj": {
+    "D:\\Projects\\ContosoAssets\\test\\FulfillmentManagerTests\\FulfillmentSdkTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\ContosoAssets\\test\\FulfillmentManagerTests\\FulfillmentSdkTests.csproj",
+        "projectUniqueName": "D:\\Projects\\ContosoAssets\\test\\FulfillmentManagerTests\\FulfillmentSdkTests.csproj",
         "projectName": "FulfillmentSdkTests",
-        "projectPath": "E:\\Projects\\ContosoAssets\\test\\FulfillmentManagerTests\\FulfillmentSdkTests.csproj",
+        "projectPath": "D:\\Projects\\ContosoAssets\\test\\FulfillmentManagerTests\\FulfillmentSdkTests.csproj",
         "packagesPath": "C:\\Users\\ercenk\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\ContosoAssets\\test\\FulfillmentManagerTests\\obj\\",
+        "outputPath": "D:\\Projects\\ContosoAssets\\test\\FulfillmentManagerTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -182,8 +182,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj": {
-                "projectPath": "E:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj"
+              "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj": {
+                "projectPath": "D:\\Projects\\ContosoAssets\\src\\ContosoAssets.SolutionManagement\\ContosoAssets.SolutionManagement.csproj"
               }
             }
           }

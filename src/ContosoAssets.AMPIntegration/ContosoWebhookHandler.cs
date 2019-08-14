@@ -7,15 +7,23 @@ using SaaSFulfillmentClient.WebHook;
 
 namespace ContosoAssets.AMPIntegration
 {
+    using System;
+    using System.Threading;
+
+    using SaaSFulfillmentClient;
+    using SaaSFulfillmentClient.Models;
+
     public class ContosoWebhookHandler : IWebhookHandler
     {
+        private readonly IFulfillmentClient fulfillmentClient;
         private readonly ILogger<ContosoWebhookHandler> logger;
         private readonly ISubscriptionManager subscriptionManager;
 
-        public ContosoWebhookHandler(ISubscriptionManager subscriptionManager, ILogger<ContosoWebhookHandler> logger)
+        public ContosoWebhookHandler(ISubscriptionManager subscriptionManager, ILogger<ContosoWebhookHandler> logger, IFulfillmentClient fulfillmentClient)
         {
             this.subscriptionManager = subscriptionManager;
             this.logger = logger;
+            this.fulfillmentClient = fulfillmentClient;
         }
 
         // We are handling only successful operation results for this sample. There can be scenarios where
@@ -33,6 +41,19 @@ namespace ContosoAssets.AMPIntegration
                 {
                     this.logger.LogInformation(
                         $"Subscription {payload.SubscriptionId} successfully updated to {payload.PlanId}");
+
+                    await this.fulfillmentClient.UpdateSubscriptionOperationAsync(
+                        payload.SubscriptionId,
+                        payload.OperationId,
+                        new OperationUpdate()
+                        {
+                            PlanId = payload.PlanId,
+                            Quantity = payload.Quantity,
+                            Status = OperationUpdateStatusEnum.Success
+                        },
+                        Guid.Empty,
+                        Guid.Empty,
+                        CancellationToken.None);
                 }
                 else
                 {
@@ -59,6 +80,19 @@ namespace ContosoAssets.AMPIntegration
                 var reinsteateResult = await this.subscriptionManager.ReactivateSubscriptionAsync(payload.SubscriptionId);
                 if (reinsteateResult.Succeeded)
                 {
+                    await this.fulfillmentClient.UpdateSubscriptionOperationAsync(
+                        payload.SubscriptionId,
+                        payload.OperationId,
+                        new OperationUpdate()
+                        {
+                            PlanId = payload.PlanId,
+                            Quantity = payload.Quantity,
+                            Status = OperationUpdateStatusEnum.Success
+                        },
+                        Guid.Empty,
+                        Guid.Empty,
+                        CancellationToken.None);
+
                     this.logger.LogInformation(
                         $"Subscription {payload.SubscriptionId} successfully reinstated.");
                 }
@@ -90,6 +124,19 @@ namespace ContosoAssets.AMPIntegration
                 var suspendResult = await this.subscriptionManager.SuspendSubscriptionAsync(payload.SubscriptionId);
                 if (suspendResult.Succeeded)
                 {
+                    await this.fulfillmentClient.UpdateSubscriptionOperationAsync(
+                        payload.SubscriptionId,
+                        payload.OperationId,
+                        new OperationUpdate()
+                        {
+                            PlanId = payload.PlanId,
+                            Quantity = payload.Quantity,
+                            Status = OperationUpdateStatusEnum.Success
+                        },
+                        Guid.Empty,
+                        Guid.Empty,
+                        CancellationToken.None);
+
                     this.logger.LogInformation(
                         $"Subscription {payload.SubscriptionId} successfully suspended.");
                 }

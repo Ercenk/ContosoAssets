@@ -24,8 +24,6 @@ namespace ContosoAssets.SolutionManagement.AzureMarketplaceFulfillment
             this.logger = logger;
         }
 
-        public IConfidentialClientApplication AdApplication { get; }
-
         public async Task<MarketplaceSubscription> ActivateSubscriptionAsync(Guid subscriptionId, string planId,
             int? quantity, CancellationToken cancellationToken = default)
         {
