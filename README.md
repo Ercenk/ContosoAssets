@@ -18,7 +18,9 @@ Please see the related [section](https://github.com/Ercenk/AzureMarketplaceSaaSA
 
 ## Areas of interest for a SaaS Solution
 
-Over the many years working with various teams and helping them plan, architect and develop multi-tenant SaaS solutions, I can distill my learnings in the following perspectives. There are of course many other pillars for building successful solutions, however, I'd like to focus on the multi-tenancy aspect.
+Over the many years working with various teams and helping them plan, architect and develop multi-tenant SaaS solutions. There are of course many other pillars for building successful solutions, however, I'd like to focus on the multi-tenancy aspect. I would like to emphasize that my discussion points in this section are generic, and **not particular to Azure Marketplace integration**.
+
+I can distill my learnings in the following perspectives. 
 
 - Customer onboarding and provisioning
 - User identities, user management and realm discovery
