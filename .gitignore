@@ -331,3 +331,12 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+.vs/ContosoAssets/DesignTimeBuild/.dtbcache
+.vs/ContosoAssets/v16/.suo
+.vs/ContosoAssets/v16/Server/sqlite3/storage.ide
+.vs/ContosoAssets/v16/Server/sqlite3/storage.ide
+.vs/ContosoAssets/DesignTimeBuild/.dtbcache
+obj/Docker/docker-compose.vs.release.partial.g.yml
+obj/Docker/docker-compose.vs.debug.partial.g.yml
+src/ContosoAssets.AMPIntegration/obj/Debug/netcoreapp2.2/project.razor.json
+src/ContosoAssets.WebApp/obj/Debug/netcoreapp2.2/project.razor.json
