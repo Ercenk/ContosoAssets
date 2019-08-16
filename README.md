@@ -47,3 +47,15 @@ The solution should track the usage of the solution features. I recommend meteri
 ### SKU Management
 
 The solution should model the usage limits per resources and map them to SKUs. The metering data then can be used to check against the resource usage limits, and determine upsell opportunities, as well as keeping the customer within their subscribed SKU boundaries.
+
+## Notes
+
+## Secrets
+
+Secrets such as API keys are managed through "dotnet user-secrets" command. For example, to set the value for "FulfillmentClient:AzureActiveDirectory:AppKey" use the following command:
+
+``` sh
+dotnet user-secrets set "FulfillmentClient:AzureActiveDirectory:AppKey" "secret here"
+```
+
+Please see the user secrets [documentation](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-2.2&tabs=windows) for more details.
