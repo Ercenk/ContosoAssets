@@ -23,7 +23,7 @@ Over the many years working with various teams and helping them plan, architect 
 I can distill my learnings in the following perspectives.
 
 - [Customer onboarding](https://github.com/Ercenk/ContosoAssets/blob/master/src/ContosoAssets.SolutionManagement/CustomerManagement/ICustomerManager.cs#L10) and [provisioning](https://github.com/Ercenk/ContosoAssets/blob/master/src/ContosoAssets.SolutionManagement/Provisioning/IProvisioningManager.cs)
-- [User identities](https://github.com/Ercenk/ContosoAssets/blob/master/src/ContosoAssets.WebApp/Startup.cs#L85), [user management](https://github.com/Ercenk/ContosoAssets/blob/master/src/ContosoAssets.SolutionManagement/CustomerManagement/ICustomerManager.cs#L12) and realm discovery
+- [User identities](https://github.com/Ercenk/ContosoAssets/blob/master/src/ContosoAssets.WebApp/Startup.cs#L85), [user management](https://github.com/Ercenk/ContosoAssets/blob/master/src/ContosoAssets.SolutionManagement/CustomerManagement/ICustomerManager.cs#L12) and [realm discovery](https://github.com/Ercenk/ContosoAssets/blob/master/src/ContosoAssets.Utils/StringExtensions.cs#L7)
 - [Usage metering](https://github.com/Ercenk/ContosoAssets/blob/master/src/ContosoAssets.WebApp/Controllers/MeteredController.cs)
 - [SKU management](https://github.com/Ercenk/ContosoAssets/blob/master/src/ContosoAssets.SolutionManagement/SubscriptionManagement/ISubscriptionManager.cs#L21)
 
