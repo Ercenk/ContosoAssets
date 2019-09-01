@@ -90,9 +90,7 @@ namespace ContosoAssets.WebApp
                 options.UseSqlServer(this.Configuration.GetContosoAssetsDefaultConnectionString())
             );
 
-            services.AddFulfillmentClient(options => this.Configuration.Bind("FulfillmentClient", options),
-                credentialBuilder =>
-                    credentialBuilder.WithClientSecretAuthentication(this.Configuration["FulfillmentClient:AzureActiveDirectory:AppKey"]));
+            services.AddFulfillmentClient(options => this.Configuration.Bind("FulfillmentClient", options));
 
             services.TryAddScoped<IUserManagerAdapter, AspNetDefaultIdentityUsers>();
             services.AddSolutionManagement(this.Configuration.GetContosoAssetsDefaultConnectionString());

@@ -77,8 +77,7 @@ namespace ContosoAssets.AMPIntegration
                 options.TokenValidationParameters.ValidateIssuer = false; // accept several tenants (here simplified)
             });
 
-            services.AddFulfillmentClient(options => ConfigurationBinder.Bind(this.Configuration, (string)"FulfillmentClient", (object)options),
-                credentialBuilder => credentialBuilder.WithClientSecretAuthentication(this.Configuration["FulfillmentClient:AzureActiveDirectory:AppKey"]));
+            services.AddFulfillmentClient(options => ConfigurationBinder.Bind(this.Configuration, (string)"FulfillmentClient", (object)options));
 
             services
                 .AddWebhookProcessor()

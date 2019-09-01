@@ -25,8 +25,6 @@ namespace FulfillmentSdkTests
 
         private readonly IConfigurationRoot configuration;
 
-        private readonly Mock<ICredentialProvider> credentialProviderMock;
-
         private readonly Mock<IFulfillmentClient> fulfillmentClientMock;
 
         private readonly Mock<ILogger> loggerMock;
@@ -53,8 +51,6 @@ namespace FulfillmentSdkTests
                         ApiVersion = MockApiVersion
                     }
                 });
-
-            this.credentialProviderMock = new Mock<ICredentialProvider>();
 
             this.fulfillmentClientMock = new Mock<IFulfillmentClient>();
 
@@ -118,11 +114,7 @@ namespace FulfillmentSdkTests
             //        System.Security.Cryptography.X509Certificates.StoreName.My,
             //        "thumbprint")));
 
-            services.AddFulfillmentClient(options => configuration.Bind("FulfillmentClient", options),
-                credentialBuilder => credentialBuilder.WithCertificateAuthentication(
-                    StoreLocation.CurrentUser,
-                    StoreName.My,
-                    "thumbprint"));
+            services.AddFulfillmentClient(options => configuration.Bind("FulfillmentClient", options));
 
             var serviceProvider = services.BuildServiceProvider();
 
@@ -146,8 +138,7 @@ namespace FulfillmentSdkTests
             var services = new ServiceCollection();
             services.AddLogging(builder => builder.AddConsole());
 
-            services.AddFulfillmentClient(options => configuration.Bind("FulfillmentClient", options),
-                credentialBuilder => credentialBuilder.WithClientSecretAuthentication("secret"));
+            services.AddFulfillmentClient(options => configuration.Bind("FulfillmentClient", options));
 
             var serviceProvider = services.BuildServiceProvider();
 
