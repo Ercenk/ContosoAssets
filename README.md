@@ -1,5 +1,7 @@
 # ContosoAssets
 
+**I am not currently working on this sample to keep it up to date. Please see my other [sample](https://github.com/Ercenk/ContosoAMPBasic) to understand how Marketplace integration works.** 
+
 ## A sample multi-tenant solution integrates with Azure Marketplace.
 
 ### At a glance
