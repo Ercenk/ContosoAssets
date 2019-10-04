@@ -1,4 +1,4 @@
-# ContosoAssets - Please see my other [sample](https://github.com/Ercenk/ContosoAMPBasic) to understand how Marketplace integration works.
+# ContosoAssets - Please see my other [sample](https://github.com/Ercenk/ContosoAMPBasic) to understand how marketplace integration works.
 
 **I am not currently working on this sample to keep it up to date. Please see my other [sample](https://github.com/Ercenk/ContosoAMPBasic) to understand how Marketplace integration works.** 
 
